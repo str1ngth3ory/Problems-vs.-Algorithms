@@ -1,3 +1,6 @@
+## Merge Sort codes are borrowed from Udacity
+## Data Structure and Algorithm Lesson 2-7
+
 def rearrange_digits(input_list):
     """
     Rearrange Array Elements so as to form two number such that their sum is maximum.
