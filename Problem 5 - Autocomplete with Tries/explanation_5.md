@@ -1,5 +1,7 @@
 ## TrieNode
 
+A node class to be used to form a linked list with multi children stored in a dictionary in each node. Provide methods to insert nodes as children and look up suffixes (or children words).
+
 1. Constructor
 
 **Time Complexity:** O(1)
@@ -26,6 +28,8 @@ Store all the words in a list.
 
 
 ## Trie
+
+A tree class with linked list to implement insert and find functions.
 
 1. Constructor
 

@@ -1,5 +1,7 @@
 ### RouteTrie
 
+A tree class with linked list to implement insert and find functions.
+
 1. Constructor
 
 **Time Complexity:** O(1)
@@ -25,6 +27,8 @@ Traverse each part in the path to check if it's in the trie. For each part, the 
 
 ### RouteTrieNode
 
+A node class to be used to form a linked list with multi children stored in a dictionary in each node. Provide methods to insert nodes as children.
+
 1. Constructor
 
 **Time Complexity:** O(1)
@@ -41,6 +45,8 @@ Add an element to a python dictionary, basically a hash map. O(1)
 
 
 ### Router
+
+A wrapper class to construct the trie, call methods from the trie to perform add handler and look up handler functions while hiding the data structure.
 
 1. Constructor
 
