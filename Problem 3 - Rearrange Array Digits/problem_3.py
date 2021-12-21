@@ -65,4 +65,6 @@ def test_function(test_case):
         print("Fail")
 
 test_function([[1, 2, 3, 4, 5], [542, 31]])
-test_case = [[4, 6, 2, 5, 9, 8], [964, 852]]
+test_function([[4, 6, 2, 5, 9, 8], [964, 852]])
+test_function([[1, 1, 1, 1, 1], [111, 11]])
+test_function([[1, 0, 1, 0, 1], [110, 10]])

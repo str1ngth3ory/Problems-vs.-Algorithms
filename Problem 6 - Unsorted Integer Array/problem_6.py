@@ -5,6 +5,9 @@ def get_min_max(ints):
     Args:
        ints(list): list of integers containing one or more integers
     """
+    if ints == []:
+        raise ValueError('Input cannot be empty list.')
+
     min_int = ints[0]
     max_int = ints[0]
 
@@ -23,3 +26,11 @@ l = [i for i in range(0, 10)]  # a list containing 0 - 9
 random.shuffle(l)
 
 print ("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
+
+l = [1]  # a list containing just one element
+random.shuffle(l)
+print ("Pass" if ((1, 1) == get_min_max(l)) else "Fail")
+
+l = []
+get_min_max(l)
+# Raise value error, error message:'Input cannot be empty list.'
