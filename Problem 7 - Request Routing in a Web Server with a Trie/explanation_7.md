@@ -22,6 +22,7 @@ Traverse each part in the path to check if it's in the trie. For each part, the 
 
 **Space Complexity:** O(1)
 
+
 ### RouteTrieNode
 
 1. Constructor
@@ -38,7 +39,8 @@ Add an element to a python dictionary, basically a hash map. O(1)
 
 **Space Complexity:** O(1)
 
-### router
+
+### Router
 
 1. Constructor
 
