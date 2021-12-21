@@ -27,10 +27,10 @@ random.shuffle(l)
 
 print ("Pass" if ((0, 9) == get_min_max(l)) else "Fail")
 
-l = [1]  # a list containing just one element
+l = [1]  # Edge case 1 -  a list containing just one element
 random.shuffle(l)
 print ("Pass" if ((1, 1) == get_min_max(l)) else "Fail")
 
 l = []
 get_min_max(l)
-# Raise value error, error message:'Input cannot be empty list.'
+# Edge case 2 - Raise value error, error message:'Input cannot be empty list.'

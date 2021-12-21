@@ -10,6 +10,12 @@ def rearrange_digits(input_list):
     Returns:
        (int),(int): Two maximum sums
     """
+    if input_list == []:
+        return None
+
+    if len(input_list) == 1:
+        return input_list
+
     sorted_list = mergesort(input_list)
 
     left, right = [], []
@@ -68,3 +74,5 @@ test_function([[1, 2, 3, 4, 5], [542, 31]])
 test_function([[4, 6, 2, 5, 9, 8], [964, 852]])
 test_function([[1, 1, 1, 1, 1], [111, 11]])
 test_function([[1, 0, 1, 0, 1], [110, 10]])
+print(rearrange_digits([1])) # edge case 1 - return original list
+print(rearrange_digits([])) # edge case 2 - return None

@@ -6,6 +6,10 @@ def sort_012(arr):
        input_list(list): List to be sorted
     """
     n = len(arr)
+
+    if n == 0:
+        return None
+
     idx_0 = 0
     idx_1 = 0
     idx_2 = len(arr) - 1
@@ -32,17 +36,23 @@ def sort_012(arr):
 
 
 def test_function(test_case):
-    print(test_case)
+
     sorted_array = sort_012(test_case)
-    print(sorted_array)
+
     if sorted_array == sorted(test_case):
         print("Pass")
     else:
         print("Fail")
 
+# edge case 1 - empty list, return None
+print(sort_012([]))
+
+# edge case 2 - single element list of 0, 1, or 2
 test_function([0])
 test_function([1])
 test_function([2])
+
+# regular cases
 test_function([0, 0, 2, 2, 2, 1, 1, 1, 2, 0, 2])
 test_function([2, 1, 2, 0, 0, 2, 1, 0, 1, 0, 0, 2, 2, 2, 1, 2, 0, 0, 0, 2, 1, 0, 2, 0, 0, 1])
 test_function([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2])
